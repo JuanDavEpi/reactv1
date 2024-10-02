@@ -1,33 +1,17 @@
-import { useEffect, useState } from 'react';
-import data from '../data/products.json';
+import React from 'react';
+import Item from './Item';
 
-const ItemList = () => {
-    const [products, setProducts] = useState([]);
-
-    const pedirProductos = () => {
-        return new Promise((resolve) => {
-            resolve(data);
-        });
-    };
-
-    useEffect(() => {
-        pedirProductos().then((res) => {
-            setProducts(res);
-        });
-    }, []);
-
-    return (
-        <div>
-            {
-                products.length > 0 && 
-                <div>
-                        <h2>{products[0].product_name}</h2>
-                        <p>{products[0].product_description}</p>
-                </div>
-                
-            }
-        </div>
-    );
-};
+const ItemList = ({ products }) => {
+  return (
+    <div>
+      <h2>Productos</h2>
+      <div className="products">
+        {products.map((prod) => (
+          <Item producto={prod} key={prod.id} />
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export default ItemList;

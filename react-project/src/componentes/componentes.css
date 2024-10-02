@@ -1,18 +1,118 @@
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0px 0px 100px 0px;
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0px 0px 100px 0px;
+  gap: 8rem;
 }
 
-a{
-    font-size: 1.2rem;
+nav a {
+  font-size: 1.2rem;
 }
 
-img{
-    width: 50px;
+nav img {
+  width: 50px;
 }
 
-img:hover{
-    cursor: pointer;
+nav img:hover {
+  cursor: pointer;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.producto {
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 8px;
+  border-radius: 10px;
+  width: 320px;
+  min-height: 400px;
+  transition: all 0.2s ease;
+}
+
+
+.producto h4 {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #fff;
+}
+
+.producto p {
+  color: #fff;
+  margin: 5px 0;
+}
+
+
+.ver-mas {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #414141;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.ver-mas:hover {
+  color: #cbcbcb;
+}
+
+.producto-imagen {
+  width: 320px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+
+
+.producto:hover {
+  transform: scale(1.03);
+}
+
+.container {
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 20px; 
+}
+
+.producto-detalle {
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  margin-top: 20px; 
+  padding: 80px 40px;
+  border-radius: 15px;
+}
+
+.producto-detalle img {
+  max-width: 400px;
+  border-radius: 15px;
+}
+
+.titulo {
+  font-size: 24px; 
+  font-weight: bold; 
+}
+
+.descripcion {
+  font-size: 16px;
+  margin: 10px 20px;
+  width: 450px;
+  text-align: center;
+}
+
+.categoria, .precio {
+  font-size: 18px;
+  margin: 5px 0; 
 }
