@@ -8,9 +8,9 @@ export default function NavBar() {
       <nav>
         <img src='./Twitter-X-White-Logo-PNG.png' alt="Logo" />
         <Link to="/">Home</Link>
-        <Link to="/components">Components</Link>
-        <Link to="/peripherals">Peripherals</Link>
-        <Link to="/computers">Computers</Link>
+        <Link to="/productos/components">Components</Link>
+        <Link to="/productos/peripherals">Peripherals</Link>
+        <Link to="/productos/devices">Devices</Link>
         <CartWidget />
       </nav>
     </>

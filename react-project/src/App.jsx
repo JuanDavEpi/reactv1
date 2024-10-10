@@ -9,9 +9,12 @@ function App() {
     <Router>
       <NavBar />
       <Routes>
-        <Route path="/" element={<ItemListContainer greeting='Bienvenido a mi e-commerce 🛒' />} /> 
-        <Route path="/item/:id" element={<ItemDetailContainer itemId={2} />} />
+        <Route path="/" element={<ItemListContainer greeting='Bienvenido a mi e-commerce 🛒' />} />
+        <Route path="/item/:id" element={<ItemDetailContainer />} />
+        <Route path="/productos" element={<ItemListContainer />} />
+        <Route path="/productos/:categoria" element={<ItemListContainer />} />
       </Routes>
+
     </Router>
   );
 }
