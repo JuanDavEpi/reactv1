@@ -116,3 +116,11 @@ nav img:hover {
   font-size: 18px;
   margin: 5px 0; 
 }
+
+/**? Counter **/
+
+.item-count{
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+}
