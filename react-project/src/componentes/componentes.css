@@ -3,7 +3,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   margin: 0px 0px 100px 0px;
-  gap: 8rem;
+  gap: 6rem;
 }
 
 nav a {
@@ -123,4 +123,30 @@ nav img:hover {
   display: flex;
   justify-content: space-around;
   margin: 30px;
+}
+
+/**! LOg in **/
+
+.form-container{
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+input{
+  width: 400px;
+  padding: 25px;
+  margin: 10px;
+  border-radius: 15px;
+  margin: 50px;
+}
+
+button{
+  width: 150px;
 }

@@ -4,7 +4,7 @@ export const dataRequest = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve(data); // Devolver los datos correctos
-    }, 2000);
+    }, 1000);
   });
 };
 
