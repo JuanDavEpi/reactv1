@@ -5,7 +5,6 @@ import ItemListContainer from './componentes/ItemListContainer';
 import ItemDetailContainer from './componentes/ItemDetailContainer';
 import Contact from './componentes/Contact';
 import { CartProvider } from './context/CartContext';
-import CartWidget from './componentes/CartWidget';
 import Cart from './componentes/Cart';
 
 function App() {

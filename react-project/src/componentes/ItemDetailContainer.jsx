@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import { dataRequestId } from "../helpers/dataRequest";
 import { useParams } from "react-router-dom";
 import ItemDetail from "./ItemDetail";
+import { doc, getDoc } from "firebase/firestore"
+import { db } from "../firebase/config"
 
 const ItemDetailContainer = () => {
 
@@ -10,13 +11,15 @@ const ItemDetailContainer = () => {
 
 
   useEffect(() => {
-    dataRequestId(Number(id))
-      .then((res) => {
-        setItem(res);
+    
+    const docRef= doc(db, "products", id);
+    getDoc(docRef)
+      .then((resp) => {
+            setItem(
+          {...resp.data(), id: resp.id }
+        );
       })
-      .catch((error) => {
-        console.error("Error fetching item:", error); // Manejo de errores
-      });
+
   }, [id]);
 
   return (

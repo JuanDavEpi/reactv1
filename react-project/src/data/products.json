@@ -96,7 +96,7 @@
         "categoria": "Devices",
         "imagen": "https://co.tiendasishop.com/cdn/shop/files/mgn63la-a_1.jpg?v=1714073907",
         "precio": 999.99,
-        "stock": 20
+        "stock": 10
     },
     {
         "id": 12,
@@ -105,11 +105,11 @@
         "categoria": "Devices",
         "imagen": "https://mac-center.com/cdn/shop/files/MacBook_Pro_13_in_Space_Gray_PDP_Image_Position-1_MXLA_5395ce92-3d36-4483-a995-b6bb011179c0.jpg?v=1700304877",
         "precio": 1299.99,
-        "stock": 15
+        "stock": 10
     },
     {
         "id": 13,
-        "titulo": "Apple iMac 24\"",
+        "titulo": "Apple iMac 24",
         "descripcion": "All-in-one desktop with stunning Retina display.",
         "categoria": "Devices",
         "imagen": "https://co.tiendasishop.com/cdn/shop/files/IMG-11196700.jpg?v=1723513189&width=823",
@@ -123,7 +123,7 @@
         "categoria": "Devices",
         "imagen": "https://mac-center.com/cdn/shop/files/194252092170-4.jpg?v=1709709926",
         "precio": 699.99,
-        "stock": 8
+        "stock": 10
     },
     {
         "id": 15,
@@ -132,6 +132,6 @@
         "categoria": "Devices",
         "imagen": "https://tecnosoluciones.co/cdn/shop/files/MacBook_Pro_16-1.jpg?v=1725568529",
         "precio": 2399.99,
-        "stock": 5
+        "stock": 10
     }
 ]

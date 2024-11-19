@@ -3,7 +3,7 @@ import { UNSAFE_DataRouterStateContext } from "react-router-dom";
 
 export const CartContext = createContext();
 
-const initialCart = JSON.parse(localStorage,getItem("cart")) || [];
+const initialCart = JSON.parse(localStorage.getItem("cart")) || [];
 
 export const CartProvider = ({children}) => {
 
@@ -30,6 +30,7 @@ export const CartProvider = ({children}) => {
     }
 
     const totalPrice = () => {
+        if (cart.length === 0) return 0;
         return cart.reduce((acc, prod) => acc + prod.precio * prod.amount, 0)
     }
 

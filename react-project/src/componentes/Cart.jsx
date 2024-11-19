@@ -26,14 +26,17 @@ const Cart = () => {
                 ))
             }
 
-            {
-                cart.length > 0 ?
-                    <>
-                        <h2> Total Price : ${totalPrice().toFixed(2)} </h2>
-                        <button onClick={handleEmpty}>Empty Cart</button>
-                    </> :
-                    <h2>Your cart is now empty</h2>
-            }
+{
+    cart.length > 0 ? (
+        <>
+            <h2> Total Price: ${totalPrice().toFixed(2)} </h2>
+            <button onClick={handleEmpty}>Empty Cart</button>
+        </>
+    ) : 
+        <h2>Your cart is now empty</h2>
+    
+}
+
 
         </div>
     )
